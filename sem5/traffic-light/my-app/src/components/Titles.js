@@ -5,7 +5,7 @@ class Titles extends Component {
       return (
         <div>
            <h1> Weather App </h1>
-           <p> descubre la temperatura, condiciones y mas... </p>
+           <p> Descubre la temperatura, humedad y mas </p>
         </div>
       );
     }
