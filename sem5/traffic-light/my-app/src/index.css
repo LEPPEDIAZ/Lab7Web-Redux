@@ -1,16 +1,5 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 body {
-  font-family: sans-serif;
-  background: black;
-  margin: 40px;
+  margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
