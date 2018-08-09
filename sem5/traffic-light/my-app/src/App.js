@@ -3,10 +3,24 @@ import './App.css';
 import Titles from "./components/Titles";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
+import { GoogleComponent } from 'react-google-location' 
+
+//gooogle location
+const API_KEY = "AIzaSyAZUr8Clbfo3Evrx9XJPKNuegwiKkMTpl4" // how to get key - step are below
+
+
 //obtenido de https://home.openweathermap.org/api_keys
 const API_KEY = "cac44e456724e32d0f7bc67a13cb0715";
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      place: null,
+    };
+  }
+
+  
 
   state = {
     temperature: undefined,
@@ -46,6 +60,16 @@ class App extends Component {
             error={this.state.error} 
             />
           <Form getWeather={this.getWeather}/>
+          <GoogleComponent
+         
+          apiKey={API_KEY}
+          language={'en'}
+          country={'country:in|country:us'}
+          coordinates={true}
+          locationBoxStyle={'custom-style'}
+          locationListStyle={'custom-style-list'}
+          onChange={(e) => { this.setState({ place: e }) }} />
+
       </div>
     );
   }
