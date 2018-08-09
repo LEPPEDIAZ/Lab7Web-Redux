@@ -7,6 +7,7 @@ class Form extends Component {
         <form onSubmit={this.props.getWeather}>
             <input type= "text" name="city" placeholder="City..."/>
             <input type= "text" name="country" placeholder="Country..."/>
+            <input type= "Date" />
             <button> Go </button>
             
         </form>

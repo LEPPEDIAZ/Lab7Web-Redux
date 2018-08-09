@@ -7,6 +7,7 @@ import Weather from "./components/Weather";
 const API_KEY = "cac44e456724e32d0f7bc67a13cb0715";
 
 class App extends Component {
+
   state = {
     temperature: undefined,
     city: undefined,
@@ -36,7 +37,6 @@ class App extends Component {
     return (
       <div>
          <Titles />
-         <Form getWeather={this.getWeather}/>
          <Weather
             temperature={this.state.temperature} 
             city={this.state.city} 
@@ -45,6 +45,7 @@ class App extends Component {
             description={this.state.description} 
             error={this.state.error} 
             />
+          <Form getWeather={this.getWeather}/>
       </div>
     );
   }
