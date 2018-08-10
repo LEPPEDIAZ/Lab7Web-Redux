@@ -3,11 +3,12 @@ import './App.css';
 import Titles from "./components/Titles";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
+import Time from "./components/Time";
 //obtenido de https://home.openweathermap.org/api_keys
 const API_KEY = "cac44e456724e32d0f7bc67a13cb0715";
 
 class App extends Component {
-
+ 
   state = {
     temperature: undefined,
     city: undefined,
@@ -37,6 +38,7 @@ class App extends Component {
     return (
       <div>
          <Titles />
+         <Time />
          <Weather
             temperature={this.state.temperature} 
             city={this.state.city} 
