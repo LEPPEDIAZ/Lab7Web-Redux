@@ -17,7 +17,7 @@ class MenuItems extends Component {
                                 <label>{ item.fooditem }</label>
                             </div>
                             <div>
-                                <label>Precio: Q{ item.price }</label>
+                                <label> Q{ item.price }</label>
                             </div>
                             <div >
                                 <input type="button" value="Add" 

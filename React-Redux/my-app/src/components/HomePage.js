@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import MenuItems from "./MenuItems";
 import CartItems from "./CartItems";
 import {connect} from 'react-redux';
+import ManagerView from "./ManagerView";
 
 
 class HomePage extends Component {
@@ -37,7 +38,7 @@ class HomePage extends Component {
                                                                     })
                                                                 }
                                                             </div>
-    
+                                                            <ManagerView />
                                                         </div>
                                                     </div>
                                                 </div>
