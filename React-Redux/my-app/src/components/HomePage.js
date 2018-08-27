@@ -11,16 +11,7 @@ class HomePage extends Component {
         return (
             <div >
                 <h1>Bienvenidos</h1>
-                <div >
-                    <div >
-                        <div>
-                            <div >
-                                <div >
-                                    <div>
-                                        <div >
-                                            <div>
-                                                <div >
-                                                    <div >
+                        
                                                         <div >
                                                                 <h2 >Menu</h2>
                                                         </div>
@@ -40,15 +31,7 @@ class HomePage extends Component {
                                                             </div>
                                                             <ManagerView />
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div >
-                                            <div >
-                                                <div >
+                                
                                                     <div >
                                                         <div >
                                                             <h2 >Bolsa</h2>
@@ -76,19 +59,16 @@ class HomePage extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                              
+                                   
+        
                                 <div >
                                     <h2 >Total: Q{this.props.stateArray.total.totalvalue}</h2>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        
+                 
+               
         );
     }
 }

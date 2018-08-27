@@ -18,9 +18,6 @@ class CartItems extends Component {
         console.log(this.props.stateArray);
         return this.props.stateArray.cart.map((item) => {
             return (
-                <div>
-                    <div>
-                        <div>
                             <div >
                                 <div
                                     >
@@ -40,9 +37,6 @@ class CartItems extends Component {
                                     />
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
             );
         })
     }

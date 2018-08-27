@@ -9,9 +9,7 @@ class MenuItems extends Component {
         const {item} = this.props;
 
         return (
-            <div >
-                <div >
-                    <div >
+      
                         <div>
                             <div >
                                 <label>{ item.fooditem }</label>
@@ -26,9 +24,7 @@ class MenuItems extends Component {
                                        }}/>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+    
         );
     }
 }

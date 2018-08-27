@@ -21,7 +21,6 @@ const todos = (state = initialState, action) => {
                 state.cart = state.cart.map((cartitem) => {
                     console.log(cartitem.fooditem+"\n"+action.item.fooditem);
                     if (cartitem.fooditem===action.item.fooditem) {
-                        console.log("Worked");
                         cartitem.qty+=1;
                         alreadyInCart=true;
                     }
