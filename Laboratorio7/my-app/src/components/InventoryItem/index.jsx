@@ -4,6 +4,7 @@ import {createStore} from 'redux';
 import * as actions from '../../actions';
 import Counter from '../InventoryList/contador';
 import Resta from '../InventoryList/resta';
+import Comentarios from '../InventoryList/comentarios';
 
 
 const InventoryItem = ({
@@ -28,29 +29,9 @@ const InventoryItem = ({
    
     ({qty}):
     <Counter />
-    <Resta />
-    <input
-          type="text"
-          placeholder="Ingrese un comentario"
-          ref={ node => { this.comentarioInput = node; } }
-        />
-    <button
-          onClick={
-            () => {
-              onSubmit(
-                this.comentarioInput.value,
-              
-              );
-
-              this.comentarioInput.value = "";
-              this.comentarioInput.focus();
-              
-            }
-          }
-        >
-          Ingresar nuevo Comentario
-        </button>
-        <h2>{comentario}</h2>
+    <br></br>
+    <Comentarios />
+    
         
     
   </li>
