@@ -30,8 +30,29 @@ const InventoryItem = ({
     ({qty}):
     <Counter />
     <br></br>
-    <Comentarios />
+    <Comentarios 
+    type="text"
+    placeholder="Ingrese un comentario"
+    ref={ node => { this.comentarioInput = node; } }
+    />
     
+    <button
+          onClick={
+            () => {
+              onSubmit(
+                this.comentarioInput.value,
+              
+              );
+
+              this.comentarioInput.value = "";
+              
+              
+            }
+          }
+        >
+          Ingresar nuevo Comentario
+        </button>
+        <h2>{comentario}</h2>
         
     
   </li>
