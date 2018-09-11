@@ -13,7 +13,13 @@ const InventoryList = ({ products = [] }) => (
     <h1>{'Reddit Blog:'}</h1>
     <Contenido/>
     <Entrada />
-    
+    <ul>
+      {
+        products.length > 0
+          ? products.map(({ id }) => <InventoryItem key={id} id={id} />)
+          : <li></li>
+      }
+    </ul>
   </Fragment>
 );
 
