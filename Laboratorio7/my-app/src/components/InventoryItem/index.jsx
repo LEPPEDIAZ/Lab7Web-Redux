@@ -69,6 +69,7 @@ export default connect(
       dispatch(actions.addToCart(id));
     },
     onSubmit(comentario) {
+      //se comento uuid porque aunque si esta implementado no lo puedo ver porque ando con una compu vieja que no deja verlo
       //dispatch(actions.addToInventory(uuid(), name, price, qty));
       dispatch(actions.addToInventory( comentario));
      
