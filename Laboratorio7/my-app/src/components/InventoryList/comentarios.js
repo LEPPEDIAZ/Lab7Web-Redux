@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './comentarios.css';
 
 class Comentarios extends Component {
     constructor(){
@@ -12,8 +13,9 @@ class Comentarios extends Component {
     }
     render () {
       return <div>
+        <h5>
         {this.state.text}
-        <br></br>
+        </h5>
         <br></br>
         <input ref="textBox" type="text" />
         <br></br>

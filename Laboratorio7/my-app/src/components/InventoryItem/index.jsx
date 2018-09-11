@@ -16,7 +16,7 @@ const InventoryItem = ({
   onSubmit,
   
 }) => (
-  <li>
+  <div>
     <h2>
     {name}
     </h2>
@@ -24,18 +24,20 @@ const InventoryItem = ({
     {price}
     </h4>
     <br></br>
+    <Counter />
+    
     
   
    
-    ({qty}):
-    <Counter />
+    
+    
     <br></br>
     <Comentarios 
     type="text"
     placeholder="Ingrese un comentario"
     ref={ node => { this.comentarioInput = node; } }
     />
-    
+    <br></br>
     <button
           onClick={
             () => {
@@ -55,7 +57,7 @@ const InventoryItem = ({
         <h2>{comentario}</h2>
         
     
-  </li>
+  </div>
 );
 
 export default connect(

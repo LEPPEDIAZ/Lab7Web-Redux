@@ -6,7 +6,7 @@ import * as selectors from '../../reducers';
 
 const CartTotal = ({ total }) => (
   <h2>
-    { total }
+   
   </h2>
 );
 

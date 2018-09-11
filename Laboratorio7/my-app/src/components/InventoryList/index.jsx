@@ -12,7 +12,7 @@ const InventoryList = ({ products = [] }) => (
       {
         products.length > 0
           ? products.map(({ id }) => <InventoryItem key={id} id={id} />)
-          : <li>No hay comentarios!</li>
+          : <li>No hay publicaciones!</li>
       }
     </ul>
   </Fragment>
